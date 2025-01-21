@@ -121,7 +121,7 @@
       '';
     };
   };
-  #services.xserver.displayManager.lightdm.background = lib.mkDefault "/home/joe/.dotfiles/wallpapers/gruvbox_stripes.png";      
+  #services.xserver.displayManager.lightdm.background = lib.mkDefault "/home/joe/.sysfiles/wallpapers/gruvbox_stripes.png";      
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -170,7 +170,7 @@
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep-since 14d --keep 10";
-    flake = "/home/joe/.dotfiles";
+    flake = "/home/joe/.sysfiles";
   };
 
   programs.zsh = {
@@ -230,7 +230,7 @@
   
   # Session variables
   environment.sessionVariables = {
-    FLAKE = "/home/joe/.dotfiles";
+    FLAKE = "/home/joe/.sysfiles";
   };
   
   # Enable and configure stylix (for automatic ricing)

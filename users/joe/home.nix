@@ -65,16 +65,16 @@
     syntaxHighlighting.enable = true;
     
     shellAliases = {
-      cconf = "git -C /home/joe/.dotfiles commit -am "; # Commits all files in .dotfiles, requires a commit message
-      pconf = "git -C /home/joe/.dotfiles push origin main"; # Pushes all changes in .dotfiles
-      sconf = "nano /home/joe/.dotfiles/system/configuration.nix"; # Edit system config
-      uconf = "nano /home/joe/.dotfiles/users/joe/home.nix"; # Edit user config
+      cconf = "git -C /home/joe/.sysfiles commit -am "; # Commits all files in .sysfiles, requires a commit message
+      pconf = "git -C /home/joe/.sysfiles push origin main"; # Pushes all changes in .sysfiles
+      sconf = "nano /home/joe/.sysfiles/system/configuration.nix"; # Edit system config
+      uconf = "nano /home/joe/.sysfiles/users/joe/home.nix"; # Edit user config
       neofetch = "fastfetch";
       py = "python3 ";
       spotify = "i3-msg 'move container to workspace 8' --quiet && i3-msg 'workspace 8' --quiet && spotify_player";
       xclass = "xprop | grep 'WM_CLASS'";
       htop = "btop";
-      update = "cd ~/.dotfiles && nix flake update && cconf 'Updated nixpkgs' && nh os switch && flatpak update";
+      update = "cd ~/.sysfiles && nix flake update && cconf 'Updated nixpkgs' && nh os switch && flatpak update";
     };
     
     history.size = 10000;
