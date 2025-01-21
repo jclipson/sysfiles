@@ -256,7 +256,7 @@
       base0F = "d65d0e"; # brown
     };
 
-    image = ./gruvbox_stripes.png;  
+    image = ../wallpapers/gruvbox_stripes.png;  
     cursor = {
       size = 24;
       package = pkgs.numix-cursor-theme;
